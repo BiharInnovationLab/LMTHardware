@@ -1,0 +1,4 @@
+#|
+$JSON
+{"YaVersion":"140","Source":"Form","Properties":{"$Name":"photo","$Type":"Form","$Version":"18","AppName":"Partograph","Title":"photo","Uuid":"0","$Components":[{"$Name":"VerticalArrangement1","$Type":"VerticalArrangement","$Version":"3","Width":"-2","Uuid":"1833113733"},{"$Name":"HorizontalArrangement1","$Type":"HorizontalArrangement","$Version":"3","Height":"-2","Width":"-2","Uuid":"1390646530","$Components":[{"$Name":"Button1","$Type":"Button","$Version":"6","Height":"-2","Width":"-2","Text":"Text for Button1","Uuid":"520583295"}]},{"$Name":"Camera1","$Type":"Camera","$Version":"2","Uuid":"-1351969424"}]}}
+|#

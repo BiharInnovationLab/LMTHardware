@@ -1,0 +1,413 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="1" x="-998" y="-430">
+    <mutation component_type="ImageSprite" instance_name="BP" event_name="Touched"></mutation>
+    <field name="COMPONENT_SELECTOR">BP</field>
+    <statement name="DO">
+      <block type="component_method" id="2" inline="false">
+        <mutation component_type="Notifier" method_name="ShowTextDialog" is_generic="false" instance_name="BPNotifier"></mutation>
+        <field name="COMPONENT_SELECTOR">BPNotifier</field>
+        <value name="ARG0">
+          <block type="text" id="3">
+            <field name="TEXT">बीपी दर्ज करें</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="4">
+            <field name="TEXT"> बीपी</field>
+          </block>
+        </value>
+        <value name="ARG2">
+          <block type="logic_boolean" id="5">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="6" x="-519" y="-415">
+    <mutation component_type="Notifier" instance_name="BPNotifier" event_name="AfterTextInput"></mutation>
+    <field name="COMPONENT_SELECTOR">BPNotifier</field>
+    <statement name="DO">
+      <block type="controls_if" id="7" inline="false">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="math_compare" id="8" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="math_number" id="9">
+                <field name="NUM">140</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="lexical_variable_get" id="10">
+                <mutation>
+                  <eventparam name="response"></eventparam>
+                </mutation>
+                <field name="VAR">response</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="11" inline="false">
+            <mutation component_type="Ball" set_or_get="set" property_name="PaintColor" is_generic="false" instance_name="BPBall"></mutation>
+            <field name="COMPONENT_SELECTOR">BPBall</field>
+            <field name="PROP">PaintColor</field>
+            <value name="VALUE">
+              <block type="color_red" id="12">
+                <field name="COLOR">#ff0000</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_set_get" id="13" inline="false">
+            <mutation component_type="Ball" set_or_get="set" property_name="PaintColor" is_generic="false" instance_name="BPBall"></mutation>
+            <field name="COMPONENT_SELECTOR">BPBall</field>
+            <field name="PROP">PaintColor</field>
+            <value name="VALUE">
+              <block type="color_red" id="14">
+                <field name="COLOR">#009900</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="15" x="-1000" y="-246">
+    <mutation component_type="ImageSprite" instance_name="FHR" event_name="Touched"></mutation>
+    <field name="COMPONENT_SELECTOR">FHR</field>
+    <statement name="DO">
+      <block type="component_method" id="16" inline="false">
+        <mutation component_type="Notifier" method_name="ShowTextDialog" is_generic="false" instance_name="FHRNotifier"></mutation>
+        <field name="COMPONENT_SELECTOR">FHRNotifier</field>
+        <value name="ARG0">
+          <block type="text" id="17">
+            <field name="TEXT">एफ एच आर दर्ज करें</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="18">
+            <field name="TEXT">एफ एच आर</field>
+          </block>
+        </value>
+        <value name="ARG2">
+          <block type="logic_boolean" id="19">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="20" x="-518" y="-225">
+    <mutation component_type="Notifier" instance_name="CONNotifier" event_name="AfterTextInput"></mutation>
+    <field name="COMPONENT_SELECTOR">CONNotifier</field>
+    <statement name="DO">
+      <block type="controls_if" id="21" inline="false">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="math_compare" id="22" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="math_number" id="23">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="lexical_variable_get" id="24">
+                <mutation>
+                  <eventparam name="response"></eventparam>
+                </mutation>
+                <field name="VAR">response</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="25" inline="false">
+            <mutation component_type="Ball" set_or_get="set" property_name="PaintColor" is_generic="false" instance_name="CONBall"></mutation>
+            <field name="COMPONENT_SELECTOR">CONBall</field>
+            <field name="PROP">PaintColor</field>
+            <value name="VALUE">
+              <block type="color_red" id="26">
+                <field name="COLOR">#ff0000</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_set_get" id="27" inline="false">
+            <mutation component_type="Ball" set_or_get="set" property_name="PaintColor" is_generic="false" instance_name="CONBall"></mutation>
+            <field name="COMPONENT_SELECTOR">CONBall</field>
+            <field name="PROP">PaintColor</field>
+            <value name="VALUE">
+              <block type="color_red" id="28">
+                <field name="COLOR">#009900</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="29" x="-1001" y="-65">
+    <mutation component_type="ImageSprite" instance_name="PULSE" event_name="Touched"></mutation>
+    <field name="COMPONENT_SELECTOR">PULSE</field>
+    <statement name="DO">
+      <block type="component_method" id="30" inline="false">
+        <mutation component_type="Notifier" method_name="ShowTextDialog" is_generic="false" instance_name="PULSENotifier2"></mutation>
+        <field name="COMPONENT_SELECTOR">PULSENotifier2</field>
+        <value name="ARG0">
+          <block type="text" id="31">
+            <field name="TEXT">नाड़ी दर्ज करें</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="32">
+            <field name="TEXT">नाड़ी</field>
+          </block>
+        </value>
+        <value name="ARG2">
+          <block type="logic_boolean" id="33">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="34" x="-524" y="3">
+    <mutation component_type="Notifier" instance_name="PULSENotifier2" event_name="AfterTextInput"></mutation>
+    <field name="COMPONENT_SELECTOR">PULSENotifier2</field>
+    <statement name="DO">
+      <block type="controls_if" id="35" inline="false">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="math_compare" id="36" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="math_number" id="37">
+                <field name="NUM">90</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="lexical_variable_get" id="38">
+                <mutation>
+                  <eventparam name="response"></eventparam>
+                </mutation>
+                <field name="VAR">response</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="39" inline="false">
+            <mutation component_type="Ball" set_or_get="set" property_name="PaintColor" is_generic="false" instance_name="PULSEBall"></mutation>
+            <field name="COMPONENT_SELECTOR">PULSEBall</field>
+            <field name="PROP">PaintColor</field>
+            <value name="VALUE">
+              <block type="color_red" id="40">
+                <field name="COLOR">#ff0000</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_set_get" id="41" inline="false">
+            <mutation component_type="Ball" set_or_get="set" property_name="PaintColor" is_generic="false" instance_name="PULSEBall"></mutation>
+            <field name="COMPONENT_SELECTOR">PULSEBall</field>
+            <field name="PROP">PaintColor</field>
+            <value name="VALUE">
+              <block type="color_red" id="42">
+                <field name="COLOR">#009900</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="43" x="-1005" y="116">
+    <mutation component_type="ImageSprite" instance_name="CON" event_name="Touched"></mutation>
+    <field name="COMPONENT_SELECTOR">CON</field>
+    <statement name="DO">
+      <block type="component_method" id="44" inline="false">
+        <mutation component_type="Notifier" method_name="ShowTextDialog" is_generic="false" instance_name="CONNotifier"></mutation>
+        <field name="COMPONENT_SELECTOR">CONNotifier</field>
+        <value name="ARG0">
+          <block type="text" id="45">
+            <field name="TEXT">कोंटरापशन दर्ज करें</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="46">
+            <field name="TEXT">कोंटरापशन</field>
+          </block>
+        </value>
+        <value name="ARG2">
+          <block type="logic_boolean" id="47">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="48" x="-512" y="228">
+    <mutation component_type="Notifier" instance_name="FHRNotifier" event_name="AfterTextInput"></mutation>
+    <field name="COMPONENT_SELECTOR">FHRNotifier</field>
+    <statement name="DO">
+      <block type="controls_if" id="49" inline="false">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="math_compare" id="50" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="math_number" id="51">
+                <field name="NUM">160</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="lexical_variable_get" id="52">
+                <mutation>
+                  <eventparam name="response"></eventparam>
+                </mutation>
+                <field name="VAR">response</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="53" inline="false">
+            <mutation component_type="Ball" set_or_get="set" property_name="PaintColor" is_generic="false" instance_name="FHRBall"></mutation>
+            <field name="COMPONENT_SELECTOR">FHRBall</field>
+            <field name="PROP">PaintColor</field>
+            <value name="VALUE">
+              <block type="color_red" id="54">
+                <field name="COLOR">#ff0000</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_set_get" id="55" inline="false">
+            <mutation component_type="Ball" set_or_get="set" property_name="PaintColor" is_generic="false" instance_name="FHRBall"></mutation>
+            <field name="COMPONENT_SELECTOR">FHRBall</field>
+            <field name="PROP">PaintColor</field>
+            <value name="VALUE">
+              <block type="color_red" id="56">
+                <field name="COLOR">#009900</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="57" x="-1012" y="319">
+    <mutation component_type="ImageSprite" instance_name="CV" event_name="Touched"></mutation>
+    <field name="COMPONENT_SELECTOR">CV</field>
+    <statement name="DO">
+      <block type="component_method" id="58" inline="false">
+        <mutation component_type="Notifier" method_name="ShowTextDialog" is_generic="false" instance_name="CVNotifier"></mutation>
+        <field name="COMPONENT_SELECTOR">CVNotifier</field>
+        <value name="ARG0">
+          <block type="text" id="59">
+            <field name="TEXT">सीवी दर्ज करें</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="60">
+            <field name="TEXT">सीवी</field>
+          </block>
+        </value>
+        <value name="ARG2">
+          <block type="logic_boolean" id="61">
+            <field name="BOOL">TRUE</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="62" x="-517" y="417">
+    <mutation component_type="Notifier" instance_name="CVNotifier" event_name="AfterTextInput"></mutation>
+    <field name="COMPONENT_SELECTOR">CVNotifier</field>
+    <statement name="DO">
+      <block type="controls_if" id="63" inline="false">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="math_compare" id="64" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="component_method" id="65" inline="false">
+                <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="TinyDB1"></mutation>
+                <field name="COMPONENT_SELECTOR">TinyDB1</field>
+                <value name="ARG0">
+                  <block type="text" id="66">
+                    <field name="TEXT">cv</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="text" id="67">
+                    <field name="TEXT">4</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <block type="lexical_variable_get" id="68">
+                <mutation>
+                  <eventparam name="response"></eventparam>
+                </mutation>
+                <field name="VAR">response</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="69" inline="false">
+            <mutation component_type="Ball" set_or_get="set" property_name="PaintColor" is_generic="false" instance_name="CVBall"></mutation>
+            <field name="COMPONENT_SELECTOR">CVBall</field>
+            <field name="PROP">PaintColor</field>
+            <value name="VALUE">
+              <block type="color_red" id="70">
+                <field name="COLOR">#ff0000</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_set_get" id="71" inline="false">
+            <mutation component_type="Ball" set_or_get="set" property_name="PaintColor" is_generic="false" instance_name="CVBall"></mutation>
+            <field name="COMPONENT_SELECTOR">CVBall</field>
+            <field name="PROP">PaintColor</field>
+            <value name="VALUE">
+              <block type="color_red" id="72">
+                <field name="COLOR">#009900</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="component_method" id="73" inline="false">
+            <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="TinyDB1"></mutation>
+            <field name="COMPONENT_SELECTOR">TinyDB1</field>
+            <value name="ARG0">
+              <block type="text" id="74">
+                <field name="TEXT">cv</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="lexical_variable_get" id="75">
+                <mutation>
+                  <eventparam name="response"></eventparam>
+                </mutation>
+                <field name="VAR">response</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="140" language-version="19"></yacodeblocks>
+</xml>

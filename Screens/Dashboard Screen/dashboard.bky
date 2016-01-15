@@ -1,0 +1,66 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="1" x="124" y="163">
+    <mutation component_type="Form" instance_name="dashboard" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">dashboard</field>
+    <statement name="DO">
+      <block type="component_set_get" id="2" inline="false">
+        <mutation component_type="ListView" set_or_get="set" property_name="ElementsFromString" is_generic="false" instance_name="ListView1"></mutation>
+        <field name="COMPONENT_SELECTOR">ListView1</field>
+        <field name="PROP">ElementsFromString</field>
+        <value name="VALUE">
+          <block type="text_join" id="3" inline="false">
+            <mutation items="2"></mutation>
+            <value name="ADD0">
+              <block type="controls_getStartValue" id="4"></block>
+            </value>
+            <value name="ADD1">
+              <block type="text" id="5">
+                <field name="TEXT"> ,Patient 1, Patient 2, Patient 3, Patient 4, Patient 5,</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="6" x="134" y="260">
+    <mutation component_type="Button" instance_name="LOGOUTButton" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">LOGOUTButton</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="7" inline="false">
+        <value name="SCREEN">
+          <block type="text" id="8">
+            <field name="TEXT">Screen1</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="9" x="559" y="265">
+    <mutation component_type="Button" instance_name="ADDButton" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">ADDButton</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="10" inline="false">
+        <value name="SCREEN">
+          <block type="text" id="11">
+            <field name="TEXT">make_acc</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="12" x="134" y="345">
+    <mutation component_type="ListView" instance_name="ListView1" event_name="AfterPicking"></mutation>
+    <field name="COMPONENT_SELECTOR">ListView1</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="13" inline="false">
+        <value name="SCREEN">
+          <block type="text" id="14">
+            <field name="TEXT">body</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="140" language-version="19"></yacodeblocks>
+</xml>
